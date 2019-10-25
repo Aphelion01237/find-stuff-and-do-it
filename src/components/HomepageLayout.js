@@ -45,7 +45,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Link up whenever you want, whereever you want'
+      content='Link up whenever you want, wherever you want'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -100,11 +100,11 @@ class DesktopContainer extends Component {
             >
               <Container>
                 <Menu.Item as='a' active>
-                  Home
+                  
                 </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
+                <Menu.Item as='a'></Menu.Item>
+                <Menu.Item as='a'></Menu.Item>
+                <Menu.Item as='a'></Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
                     Log in
@@ -154,12 +154,6 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as='a' active>
-            Home
-          </Menu.Item>
-          <Menu.Item as='a'>Work</Menu.Item>
-          <Menu.Item as='a'>Company</Menu.Item>
-          <Menu.Item as='a'>Careers</Menu.Item>
           <Menu.Item as='a'>Log in</Menu.Item>
           <Menu.Item as='a'>Sign Up</Menu.Item>
         </Sidebar>
@@ -214,26 +208,29 @@ ResponsiveContainer.propTypes = {
 const HomepageLayout = () => (
   <ResponsiveContainer>
     <Card>
-      <div>
-    <Icon name='Beer' size='huge' />
-        </div>
     <Card.Content>
-      <Card.Header>Matthew</Card.Header>
+      <Card.Header>House Party</Card.Header>
       <Card.Meta>
-        <span className='date'>Joined in 2015</span>
+        <span className='date'>Mathew Smith</span>
+      </Card.Meta>
+      <Card.Meta>
+        <span className='date'>11.20.19</span>
+      </Card.Meta>
+      <Card.Meta>
+        <span className='date'>1234 sesame street</span>
       </Card.Meta>
       <Card.Description>
-        Matthew is a musician living in Nashville.
+        we bouta turn up
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a>
         <Icon name='user' />
-        22 Friends
+        22 comments
       </a>
     </Card.Content>
   </Card>
-)
+
 
 
 
