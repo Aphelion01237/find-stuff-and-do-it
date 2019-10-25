@@ -27,3 +27,4 @@ getEventsComments: (req, res) => {
         res.json(comments);
     });
 }
+}

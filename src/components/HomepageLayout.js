@@ -18,6 +18,7 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 import CardExampleCard from './cards/cards'
+import EventCards from './cards/cards'
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -212,7 +213,8 @@ const HomepageLayout = () => (
     <Divider hidden />
     <Container textAlign='center'><Header as='h1'>SquadUp Requests</Header></Container>
     <Divider hidden />
-    <Card.Group>
+    <EventCards/>
+    {/* <Card.Group>
       <CardExampleCard />
 
       <CardExampleCard />
@@ -253,7 +255,7 @@ const HomepageLayout = () => (
 
       <CardExampleCard />
 
-    </Card.Group>
+    </Card.Group> */}
   </ResponsiveContainer>
 )
 export default HomepageLayout
