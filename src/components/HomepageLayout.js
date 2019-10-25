@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import {
   Button,
   Card,
@@ -110,7 +111,7 @@ class DesktopContainer extends Component {
                     Log in
                   </Button>
                   <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Sign Up
+                    <Link to= '/Signup'>Sign Up</Link>
                   </Button>
                 </Menu.Item>
               </Container>
