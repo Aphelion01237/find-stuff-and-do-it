@@ -9,10 +9,12 @@ module.exports = {
             if(err) {
                 return res.status(404).send(err);
             }
-            res.json(event);
+            res.json(userInfo);
         });
+    },
+        createUser: (req, res) => {
+
+
     }
-
-
 
 }
