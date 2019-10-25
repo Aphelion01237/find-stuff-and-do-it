@@ -15,12 +15,10 @@ class App extends Component {
     return (
       <Router>
 <Switch>
-  <Route path="/">
-    <HomepageLayout/>
-  </Route>
-  <Route path='/signup'>
-      <Signup/>
-  </Route>
+  <Route exact path="/" component={HomepageLayout}/>
+
+  <Route exact path='/signup' component={Signup}/>
+  
 </Switch>
 </Router>
     );
