@@ -11,9 +11,9 @@ CREATE TABLE events (
 id INT AUTO_INCREMENT,
 event_name VARCHAR(255) NOT NULL,
 event_description VARCHAR(255),
-event_time INT,
-event_location VARCHAR(255) NOT NULL,
-event_creator_username VARCHAR(255),
+event_game VARCHAR(255),
+event_timezone VARCHAR(4) NOT NULL,
+event_creator_IGN VARCHAR(255),
 user_id INT NOT NULL,
 PRIMARY KEY(id),
 FOREIGN KEY (user_id) REFERENCES users(id)

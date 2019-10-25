@@ -6,9 +6,6 @@ const commentRoutes = require('./commentRoutes');
 
 // /api  prepended to every route declared in here
 
-
-
-
 // /api/user
 router.use('/user', userRoutes)
 
