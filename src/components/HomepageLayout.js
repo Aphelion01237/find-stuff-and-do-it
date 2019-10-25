@@ -108,7 +108,7 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a'></Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
-                    Log in
+                    <Link to= '/Login'>Log in</Link>
                   </Button>
                   <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     <Link to= '/Signup'>Sign Up</Link>

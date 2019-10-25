@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 // components
 import HomepageLayout from './components/HomepageLayout'
 import Signup from './components/Signup'
+import LoginForm from './components/Login'
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
       <Router>
 <Switch>
   <Route exact path="/" component={HomepageLayout}/>
+  <Route exact path='/login' component={LoginForm}/>
 
   <Route exact path='/signup' component={Signup}/>
   
