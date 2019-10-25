@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import {
   Button,
+  Card,
   Container,
   Divider,
   Grid,
@@ -33,7 +34,7 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as='h1'
-      content='Imagine-a-Company'
+      content='SquadUp'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -44,7 +45,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Do whatever you want when you want to.'
+      content='Link up whenever you want, wherever you want'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -87,7 +88,7 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
+            style={{ minHeight: 200, padding: '1em 0em' }}
             vertical
           >
             <Menu
@@ -99,11 +100,11 @@ class DesktopContainer extends Component {
             >
               <Container>
                 <Menu.Item as='a' active>
-                  Home
+                  
                 </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
+                <Menu.Item as='a'></Menu.Item>
+                <Menu.Item as='a'></Menu.Item>
+                <Menu.Item as='a'></Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
                     Log in
@@ -153,12 +154,6 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as='a' active>
-            Home
-          </Menu.Item>
-          <Menu.Item as='a'>Work</Menu.Item>
-          <Menu.Item as='a'>Company</Menu.Item>
-          <Menu.Item as='a'>Careers</Menu.Item>
           <Menu.Item as='a'>Log in</Menu.Item>
           <Menu.Item as='a'>Sign Up</Menu.Item>
         </Sidebar>
@@ -212,6 +207,34 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
+    <Card>
+    <Card.Content>
+      <Card.Header>House Party</Card.Header>
+      <Card.Meta>
+        <span className='date'>Mathew Smith</span>
+      </Card.Meta>
+      <Card.Meta>
+        <span className='date'>11.20.19</span>
+      </Card.Meta>
+      <Card.Meta>
+        <span className='date'>1234 sesame street</span>
+      </Card.Meta>
+      <Card.Description>
+        we bouta turn up
+      </Card.Description>
+    </Card.Content>
+    <Card.Content extra>
+      <a>
+        <Icon name='user' />
+        22 comments
+      </a>
+    </Card.Content>
+  </Card>
+
+
+
+
+
     {/* <Segment style={{ padding: '8em 0em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
